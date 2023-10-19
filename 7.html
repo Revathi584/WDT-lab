@@ -1,0 +1,66 @@
+<!DOCTYPE Library[
+<!ELEMENT Library(books,publishers,staffs,members)>
+<!ELEMENT books(book1,book2)>
+<!ELEMENT book1(id,title,author,price)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT title(#PCDATA)>
+<!ELEMENT author(#PCDATA)>
+<!ELEMENT price(#PCDATA)>
+<!ELEMENT book2(id,title,author,price)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT title(#PCDATA)>
+<!ELEMENT author(#PCDATA)>
+<!ELEMENT price(#PCDATA)>
+<!ELEMENT members(member1,member2)>
+<!ELEMENT member1(name,id,phonenumber,address)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT phonenumber(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT member2(name,id,phonenumber,address)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT phonenumber(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT staffs(staff1,staff2)>
+<!ELEMENT staff1(name,id,phonenumber,address)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT phonenumber(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT staff2(name,id,phonenumber,address)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT phonenumber(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<ATTLIST book1 bookid CDATA #REQUIRED>
+<ATTLIST book2 bookid CDATA #REQUIRED>
+<ATTLIST member1 memberId CDATA #REQUIRED>
+<ATTLIST member2 memberId CDATA #REQUIRED>
+]>
+<Library>
+<books>
+<book1 id="1">
+<title>Web Designing and Publishing</title> 
+<author>aaaaa</author>
+<price>333</price>
+</book1>
+<book2 id="2">
+<title>Artificial Intelligence</title>
+<author>Abc</author>
+<price>500</price>
+</book2>
+</books>
+<members>
+<member1 id="101">
+<name>sharada</name>
+<address>Anantapur</address>
+<phonenumber>9876543210</phonenumber>
+</member1>
+<member2 id="102">
+<name>Abcdef</name>
+<address>Delhi</address>
+<phonenumber>9988776655</phonenumber>
+</member2>
+</members>
+</Library>
